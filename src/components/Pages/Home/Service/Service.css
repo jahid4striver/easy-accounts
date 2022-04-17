@@ -1,0 +1,31 @@
+.service-card{
+    position: relative;
+    text-align: center;
+}
+
+.service-title{
+width: 320px;
+height: 100px;
+background-color: #ffe400;
+padding: 30px;
+position: absolute;
+bottom: 200px;
+left: 30px;
+text-align: center;
+box-shadow: 2px 2px 5px lightgrey;
+font-weight: bold;
+
+}
+
+.checkout-btn{
+    background-color: #ffe400;
+    padding: 20px 40px;
+    border: 0;
+    color: black;
+}
+.checkout-btn:hover{
+    background-color: black;
+    color: #ffe400;
+    font-weight: bold;
+    transition: 0.5s;
+}
