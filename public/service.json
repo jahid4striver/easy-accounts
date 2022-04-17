@@ -1,0 +1,23 @@
+[
+    {
+        "id": 0,
+        "name": "Software System Impliment",
+        "price": "30000",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://architosh.com/wp-content/uploads/2018/12/monograph1.jpg"
+    },
+    {
+        "id": 1,
+        "name": "Inventory Management System",
+        "price": "50000",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://tj-web-prod.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2019/02/Inventory-Management-Software_feature.png"
+    },
+    {
+        "id": 2,
+        "name": "Accounts Consultant",
+        "price": "100000",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://katu.com/resources/media/20958dff-7db9-49c2-bf0f-aadf5605e3a9-large16x9_financialanalystfa08312016.jpg"
+    }
+]
