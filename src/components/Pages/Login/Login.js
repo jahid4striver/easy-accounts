@@ -71,7 +71,7 @@ const Login = () => {
 
                     </form>
                     <p>Not Have a Account? <Link style={{ color: 'tomato' }} className='fw-bold text-decoration-none' to='/signup'>Register</Link></p>
-            <p>Forget Password? <button className='btn btn-link text-primary text-decoration-none' onClick={resetPassword}>Reset Password</button></p>
+            <p>Forget Password? <button style={{ color: 'tomato' }} className='btn btn-link fw-bold text-decoration-none' onClick={resetPassword}>Reset Password</button></p>
                     <div className='d-flex'>
                         <div style={{ border: '1px solid #ffe400', height: '1px' }} className='w-50'></div>
                         <p className=''>or</p>
