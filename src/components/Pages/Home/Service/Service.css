@@ -24,7 +24,8 @@ font-weight: bold;
     color: black;
 }
 .checkout-btn:hover{
-    background-color: black;
+    background-color: white;
+    border: 2px solid #ffe400;
     color: #ffe400;
     font-weight: bold;
     transition: 0.5s;
