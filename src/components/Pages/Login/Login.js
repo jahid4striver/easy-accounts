@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../Firebase/Firebase';
 import SocailLogin from '../../Shared/SocailLogin/SocailLogin';
+import Loading from '../../Shared/Loading/Loading';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -19,6 +20,10 @@ const Login = () => {
       const location = useLocation();
       const from = location.state?.from?.pathname || "/";
 
+    
+    if(loading){
+        return <Loading></Loading>
+    }
     if(user){
         navigate(from, { replace: true });
     }
