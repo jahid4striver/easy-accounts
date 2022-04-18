@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSendEmailVerification } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../../Firebase/Firebase';
+import Loading from '../../Shared/Loading/Loading';
 import SocailLogin from '../../Shared/SocailLogin/SocailLogin';
 
 
@@ -16,7 +17,7 @@ const SignUp = () => {
 
 
     const [ createUserWithEmailAndPassword,user,loading,error,] = useCreateUserWithEmailAndPassword(auth);
-
+    const [sendEmailVerification, sending] = useSendEmailVerification(auth);
 
     const handleEmail = (e) => {
         setEmail(e.target.value);
@@ -27,6 +28,10 @@ const SignUp = () => {
     const handleConfirmPassword = (e) => {
         setConPassword(e.target.value);
     }
+if(loading|| sending){
+    return <Loading></Loading>
+}
+
 if(user){
     navigate('/')
     toast('User Registration Successfull')
@@ -37,8 +42,11 @@ if(user){
           return  setErrors('Confirm Password Not Match');
         }
        createUserWithEmailAndPassword(email, password);
+       sendEmailVerify();
     }
-
+const sendEmailVerify= ()=>{
+    sendEmailVerification();
+}
 
     return (
         <div className='text-center'>
@@ -51,6 +59,7 @@ if(user){
                 <input onBlur={handlePassword} style={{ width: '26rem', outline:'0', border:'1px solid #ffe400' }} className='d-block p-3 mb-3' type="password" name="" id="" placeholder='Password' required />
                 <input onBlur={handleConfirmPassword} style={{ width: '26rem', outline:'0', border:'1px solid #ffe400' }} className='d-block p-3 mb-3' type="password" name="" id="" placeholder='Confirm Password' required />
                 <p className='text-danger fw-bold'>{errors}</p>
+                <p className='text-danger fw-bold'>{error}</p>
                 <input style={{ width: '26rem', border:'0', backgroundColor:'#ffe400' }} className='d-block p-3 mb-3 mx-auto' type="submit" value="Register" />
             </form>
             <p>Have a Account? <Link style={{color:'tomato'}} className='fw-bold text-decoration-none' to='/login'>Login</Link></p>

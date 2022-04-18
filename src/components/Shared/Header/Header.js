@@ -21,7 +21,6 @@ const Header = () => {
                     <Nav className="ms-auto">
                         <Link className='text-decoration-none ms-3 text-dark' to="/">Home</Link>
                         <Link className='text-decoration-none ms-3 text-dark' to="/blogs">Blogs</Link>
-                        <Link className='text-decoration-none ms-3 text-dark' to="/contact">Contact</Link>
                         <Link className='text-decoration-none ms-3 text-dark' to="/about">About Me</Link>
                         {
                             user?<button onClick={handleSignOut} style={{border:'0', backgroundColor: 'white'}} className='text-decoration-none ms-3 text-dark'>Sign Out</button> :<Link className='text-decoration-none ms-3 text-dark' to="/login">Login</Link>

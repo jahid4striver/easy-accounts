@@ -13,8 +13,8 @@ const Service = ({ service }) => {
     }
     return (
         <div className='col-lg-4 col-md-6 col-12'>
-            <Card className='shadow bg-body rounded service-card' style={{ width: '24rem', height: '32rem' }}>
-                <Card.Img className='img-fluid h-50' variant="top" src={img} />
+            <Card className='shadow bg-body rounded service-card mx-auto' style={{ width: '24rem', height: '32rem' }}>
+                <Card.Img className='img-100 h-50' variant="top" src={img} />
                 <Card.Body>
                     <Card.Title className='service-title'>{name} BDT {price} Tk</Card.Title>
                     <Card.Text className='mt-5'>
