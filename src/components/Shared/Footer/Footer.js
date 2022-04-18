@@ -4,7 +4,7 @@ const Footer = () => {
     const date= new Date();
     const currentYear= date.getUTCFullYear();
     return (
-        <div style={{height: '150px'}} className='bg-dark text-white d-flex justify-content-center align-items-center'>
+        <div style={{height: '150px'}} className='bg-dark text-white d-flex justify-content-center align-items-center w-100'>
             <p>&copy; Copyright Easy Accounts {currentYear}</p>
         </div>
     );
