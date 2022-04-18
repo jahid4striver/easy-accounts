@@ -49,8 +49,8 @@ const Login = () => {
                 <div style={{ width: '32rem', borderRadius: '20px', border: ' 1px solid #ffe400' }} className='p-5 mb-5 mx-auto'>
                     <h2 className='fw-bold my-2'>Please Login</h2>
                     <form onSubmit={handleSubmit}>
-                        <input onBlur={handleEmail} style={{ width: '26rem', outline: '0', border: '1px solid #ffe400' }} className='d-block p-3 mb-3' type="email" name="email" id="" placeholder='Your Email' />
-                        <input onBlur={handlePassword} style={{ width: '26rem', outline: '0', border: '1px solid #ffe400' }} className='d-block p-3 mb-3' type="password" name="password" id="" placeholder='Your Password' />
+                        <input onBlur={handleEmail} style={{ width: '26rem', outline: '0', border: '1px solid #ffe400' }} className='d-block p-3 mb-3' type="email" name="email" id="" placeholder='Your Email' required/>
+                        <input onBlur={handlePassword} style={{ width: '26rem', outline: '0', border: '1px solid #ffe400' }} className='d-block p-3 mb-3' type="password" name="password" id="" placeholder='Your Password' required />
                         <input style={{ width: '26rem', border: '0', backgroundColor: '#ffe400' }} className='d-block p-3 mb-3 mx-auto' type="submit" value="Login" />
                     </form>
                     <p>Not Have a Account? <Link style={{ color: 'tomato' }} className='fw-bold text-decoration-none' to='/signup'>Register</Link></p>
