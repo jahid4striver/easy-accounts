@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { useAuth } from 'firebase/auth'
-import google from '../../../images/google.png'
 import { useState } from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../Firebase/Firebase';
+import SocailLogin from '../../Shared/SocailLogin/SocailLogin';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -55,7 +54,7 @@ const Login = () => {
                         <p className=''>or</p>
                         <div style={{ border: '1px solid #ffe400', height: '1px' }} className='w-50'></div>
                     </div>
-                    <button style={{ backgroundColor: '#ffe400' }} className='p-3 border-0'> <img width='30px' src={google} alt="" /> Sign In With Google</button>
+                    <SocailLogin></SocailLogin>
                 </div>
             </div>
         </div>

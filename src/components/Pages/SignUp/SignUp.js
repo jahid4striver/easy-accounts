@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import auth from '../../../Firebase/Firebase';
 import google from '../../../images/google.png'
+import SocailLogin from '../../Shared/SocailLogin/SocailLogin';
 
 
 const SignUp = () => {
@@ -57,7 +58,7 @@ if(user){
                 <p className=''>or</p>
                 <div style={{border:'1px solid #ffe400', height:'1px'}} className='w-50'></div>
             </div>
-            <button style={{backgroundColor:'#ffe400'}} className='p-3 border-0'> <img width='30px' src={google} alt="" /> Sign In With Google</button>
+            <SocailLogin></SocailLogin>
         </div>
         </div>
     </div>

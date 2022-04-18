@@ -3,7 +3,8 @@ import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
-import auth from '../../Firebase/Firebase';
+import auth from '../../../Firebase/Firebase';
+import './Header.css'
 
 const Header = () => {
     const [user]= useAuthState(auth);
@@ -12,9 +13,9 @@ const Header = () => {
         signOut(auth);
     }
     return (
-        <Navbar className='shadow-sm p-3 mb-5 bg-body rounded' collapseOnSelect expand="lg" bg="white" variant="light">
+        <Navbar  className='shadow-sm p-3 mb-5 bg-body rounded setmargin' collapseOnSelect expand="lg" bg="white" variant="light">
             <Container>
-                <Navbar.Brand className='text-dark' href="#home">Easy Accounts</Navbar.Brand>
+                <Navbar.Brand className='text-dark' href="#home"><h3>Easy Accounts</h3></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto">
