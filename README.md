@@ -3,7 +3,7 @@ Website Name: Easy Accounts
 Live Site Link: https://easy-accounts-b7a5d.web.app/
 ---
 
-Website Features
+**Website Features**
 
 * Gorgeous Looking Tamplate
 * Responsive Navbar
@@ -11,7 +11,7 @@ Website Features
 * Protected Route Used
 * Firebase Authentication System With Email Password and Google Login Used
 
-Technologies Used
+**Technologies Used**
 
 * React
 * React-Router
