@@ -16,7 +16,7 @@ const Service = ({ service }) => {
             <Card className='shadow bg-body rounded service-card' style={{ width: '24rem', height: '32rem' }}>
                 <Card.Img className='img-fluid h-50' variant="top" src={img} />
                 <Card.Body>
-                    <Card.Title className='service-title'>{name} ${price}</Card.Title>
+                    <Card.Title className='service-title'>{name} BDT {price} Tk</Card.Title>
                     <Card.Text className='mt-5'>
                         {description}
                     </Card.Text>
